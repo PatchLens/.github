@@ -2,45 +2,34 @@
 
 **Next-Level Go Dependency Update Validation**
 
-PatchLens is an automated analysis tool that helps Go developers safely and efficiently manage dependency updates. By deeply analyzing code and test suites, PatchLens identifies hidden risks and behavior changes introduced by both direct and indirect module upgrades.
+PatchLens automates the discovery and risk assessment of behavior changes introduced by Go dependency updates. By combining static call-graph analysis, precise field-level and execution behavior inspections, PatchLens instantly identifies hidden regressions and subtle behavior shifts. Reducing manual testing, speeding up debugging, and helping you safely integrate updates.
 
 ---
 
-## How It Works
+## Core Benefits
 
-PatchLens performs a multi-phase analysis to assess the impact of dependency changes:
-
-1. **Analyze**  
-   - Detects changes in updated modules, including transitive dependencies.  
-   - Uses static analysis to trace call paths from your codebase to the changed dependency functions.  
-   - Analyzes existing unit tests to establish a baseline for validation.
-
-2. **Expand**  
-   - Identifies key points in the code to monitor field values, capturing behavior changes throughout the project.  
-   - Utilizes AI to expand unit tests, enhancing coverage of change-affected areas.  
-   - Employs field-level inspection to detect behavior changes without relying solely on assertions.
-
-3. **Validate**  
-   - Executes tests multiple times to distinguish stable fields from unstable ones, focusing on meaningful changes.  
-   - Assesses risk by analyzing field state changes at points where your project interacts with updated module functions.  
-   - Measures confidence by introducing intentional mutations in the updated module and verifying that the test suite detects these injected defects.
+* **Automatic Risk Detection**: Identify direct and indirect dependency impacts instantly.
+* **Rapid Debugging**: Pinpoint exact locations and nature of code behavior changes.
+* **Reduced Manual Testing**: AI-expanded test suites significantly reduce manual efforts.
+* **Improved Security**: Proactively manage dependency vulnerabilities.
+* **Seamless CI Integration**: Easily integrates with Dependabot, Renovate, and manual workflows.
 
 ---
 
-## Integrate with Your CI/CD Pipeline
+## Technical Approach
 
-PatchLens is designed to integrate seamlessly into your continuous integration workflows. It complements tools like Dependabot by providing in-depth analysis and validation reports specific to each dependency update.
+PatchLens leverages advanced static analysis and field-level inspection techniques. For a detailed explanation of our technical methodology, visit our [methodology page](https://patchlens.com/methodology).
 
 ---
 
-## Free for Open Source Projects
+## Free for Open Source
 
-We offer PatchLens for free to open source projects on GitHub that are public and use compatible licenses (Apache 2.0, MIT, BSD, or MPL). For integration details, refer to our [go-dep-impact-action](https://github.com/patchlens/go-dep-impact-action) repository.
+PatchLens is free for public GitHub repositories using open-source licenses (Apache-2.0, MIT, BSD, MPL). Check out our [go-dep-impact-action](https://github.com/patchlens/go-dep-impact-action) for easy integration.
 
 ---
 
 ## Learn More
 
-Visit [patchlens.com](https://patchlens.com/) to learn more about our approach and how PatchLens can help you manage Go dependencies with confidence.
+Visit [patchlens.com](https://patchlens.com/) to learn more about [our approach](https://patchlens.com/methodology) and how PatchLens can help you manage Go dependencies with confidence.
 
 For questions or support, please [contact our team](https://patchlens.com/#contact).
