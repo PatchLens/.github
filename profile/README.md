@@ -38,4 +38,4 @@ For automated CI/CD integration, use our [go-dep-impact-action](https://github.c
 
 Visit [patchlens.com](https://patchlens.com/) to learn more about [our approach](https://patchlens.com/methodology) and how PatchLens can help you manage Go dependencies with confidence.
 
-For questions or support, please [contact our team](https://patchlens.com/#contact).
+For questions or support, please [contact our team](https://patchlens.com/contact).
