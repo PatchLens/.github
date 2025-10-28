@@ -1,8 +1,10 @@
 # PatchLens
 
-**Next-Level Go Dependency Update Validation**
+**Deep Dependency Update Risk Analysis**
 
-PatchLens automates the discovery and risk assessment of behavior changes introduced by Go dependency updates. By combining static call-graph analysis, precise field-level and execution behavior inspections, PatchLens instantly identifies hidden regressions and subtle behavior shifts. Reducing manual testing, speeding up debugging, and helping you safely integrate updates.
+PatchLens automates the discovery and risk assessment of behavior changes introduced by Go dependency updates. By combining static analysis, precise field-level and execution behavior inspections, PatchLens identifies hidden regressions and subtle behavior shifts. Reducing manual testing, speeding up debugging, and helping you safely integrate updates.
+
+We also offer a licensed version of our software which can detect zero day supply chain attacks in addition to other improvements which strengthen the signal our tool can provide.
 
 ---
 
